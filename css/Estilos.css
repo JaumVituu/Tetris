@@ -1,0 +1,23 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 320px 200px;
+	
+}
+.right-column {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+.painel-jogo {
+	border: solid 2px;	
+}
+
+.play-btn {
+	background-color: #4caf50;
+	font-size: 16px;
+	padding: 15px 30px;
+	cursor: pointer;
+}
