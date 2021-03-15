@@ -27,11 +27,11 @@ document.addEventListener('keydown', event => {
 		event.preventDefault();
 		
 		//Obtem o novo estado da peça
-		let p = movimento [event.keyCode](Painel.peca);
+		let p = movimento[event.keyCode](painel.peca);
 		
 		if(event.keyCode === KEY.SPACE) { 
 		//Queda livre
-		while(painel.validar(p)){
+		while (painel.validar(p)){
 			painel.peca.mover(p);
 			p = movimento[KEY.DOWN](painel.peca);
 			//limpa a posição anterior antes de movê-la.
@@ -47,7 +47,7 @@ document.addEventListener('keydown', event => {
 			painel.peca.mover(p);
 			
 			//limpa a posição anterior antes de movê-la.
-			ctx.clearRect (0, 0, ctx.canvas.width, ctx.canvas,height);
+			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 			
 			painel.peca.desenho();
 		}

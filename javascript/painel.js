@@ -23,5 +23,7 @@ class Painel {
 				(x >= 0 && x < COLUNA &&
 				 y <= LINHA)
 		    );
+		});
+	});
+	}
 }
-)
